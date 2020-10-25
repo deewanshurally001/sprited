@@ -9,12 +9,15 @@ var usersRouter = require('./routes/users');
 
 
 var app = express();
+
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://deewanshu:sunilrally@cluster0.wzi5b.mongodb.net/task',{
+mongoose.connect('mongodb+srv://deewanshu:sunilrally@cluster0.wzi5b.mongodb.net/task',
+    {
     useNewUrlParser: true,
         useUnifiedTopology: true
 }).then(
-    { (res) } => { console.log('coonection to mongodb') }).catch ( ( ) => {
+    (res) => { console.log('connection to mongodb') }).catch(() =>
+    {
     console.log(' connection error')
 })
 // view engine setup
