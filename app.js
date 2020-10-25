@@ -11,7 +11,8 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://deewanshu:sunilrally@cluster0.wzi5b.mongodb.net/task',
+const globals = require('./Config/globals')
+mongoose.connect(globals.db,
     {
     useNewUrlParser: true,
         useUnifiedTopology: true
