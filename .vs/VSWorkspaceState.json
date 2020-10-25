@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\javascripts",
-    "\\public\\stylesheets",
+    "\\routes",
     "\\views"
   ],
   "SelectedNode": "\\app.js",

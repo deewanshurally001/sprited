@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 
 var app = express();
-const mongoose = require('mongooose')
+const mongoose = require('mongoose')
 mongoose.connect('mongodb+srv://deewanshu:sunilrally@cluster0.wzi5b.mongodb.net/task',{
     useNewUrlParser: true,
         useUnifiedTopology: true
